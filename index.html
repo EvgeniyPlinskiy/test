@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Котик</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header-title">Ты сегодня покормил кота?</h1>
+      <button onclick="onDisabled()">Click me</button>
+    </header>
+    <section class="main">
+      <!-- Block-1 -->
+      <div>
+        <div class="block-outside" id="block-outside">
+          <div class="block-inside" id="block" onmouseover="changeColorHover()" onmouseout="rechangeColorHover()"
+            onclick="changeColorClick()">
+            <div class="block-content">
+              <div class="block-description">
+                <p class="block-description-vis" id="block-description-vis">
+                  Сказочное заморское явство
+                </p>
+                <p class="block-description-invis" id="block-description-invis">
+                  Котэ не одобряет?
+                </p>
+              </div>
+              <h3 class="block-title">
+                Нямушка
+              </h3>
+              <h4 class="block-subtitle">
+                с фуа-гра
+              </h4>
+              <p class="block-text">
+                10 порций <br> мышь в подарок
+              </p>
+            </div>
+            <img src="/images/Photo.png" alt="" class="block-img">
+            <div class="block-circle" id="block-circle">
+              <div class="block-circle-weight">
+                <p>0,5</p>
+              </div>
+              <small class="block-circle-small">кг</small>
+            </div>
+
+            <div id="block-disabled"></div>
+          </div>
+        </div>
+        <div class="block-footer">
+          <p class="block-footer-text" id="block-footer-text">Чего сидишь? Порадуй котэ, <a class="block-footer-link"
+              id="block-footer-link" href="#">купи.</a></p>
+          <p class="block-footer-link-invis" id="block-footer-link-invis">Печень утки разварная с артишоками.</p>
+          <p class="block-footer-disabled" id="block-footer-disabled">Печалька, с фуа-гра закончился.</p>
+        </div>
+      </div>
+      <!-- /Block-1 -->
+   
+
+  </div>
+
+
+  </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
